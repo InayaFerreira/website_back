@@ -13,11 +13,11 @@ router.post('/pedidos', PedidoController.Insert);
 router.get('/pedidos', PedidoController.SelectAll);
 router.get('/pedidos/:id', PedidoController.SelectDetail);
 router.put('/pedidos/:id', PedidoController.Update);
-router.delete('pedidos/:id', PedidoController.Delete);
+router.delete('/pedidos/:id', PedidoController.Delete);
 router.post('/carrinhos', CarrinhoController.Insert);
 router.get('/carrinhos', CarrinhoController.SelectAll);
 router.get('/carrinhos/:id', CarrinhoController.SelectDetail);
 router.put('/carrinhos/:id', CarrinhoController.Update);
-router.delete('carrinhos/:id', CarrinhoController.Delete);
+router.delete('/carrinhos/:id', CarrinhoController.Delete);
  
 module.exports = router;
