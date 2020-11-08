@@ -47,6 +47,13 @@ const Pedido = sequelize.define("pedido", {
             len: [1, 999999]
         }
     },
+    fraseEspecial: {
+        allowNull: false,
+        type: Sequelize.STRING(500),
+        validate: {
+            len: [1, 300]
+        }
+    },
 });
  
 module.exports = Pedido;

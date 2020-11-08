@@ -9,6 +9,7 @@ exports.Insert = (req, res, next) => {
     const custo = req.body.custo;
     const venda = req.body.venda;
     const estoque = req.body.estoque;
+    const fraseEspecial = req.body.fraseEspecial;
 
 
  
@@ -19,6 +20,7 @@ exports.Insert = (req, res, next) => {
         custo: custo,
         venda: venda,
         estoque: estoque,
+        fraseEspecial : fraseEspecial,
     
 
     })
@@ -65,6 +67,7 @@ exports.Update = (req, res, next) => {
     const custo = req.body.custo;
     const venda = req.body.venda;
     const estoque = req.body.estoque;
+    const fraseEspecial = req.body.fraseEspecial
     
 
  
@@ -77,6 +80,7 @@ exports.Update = (req, res, next) => {
                     custo: custo,
                     venda: venda,
                     estoque: estoque,
+                    fraseEspecial: fraseEspecial
 
                 },
                     {
